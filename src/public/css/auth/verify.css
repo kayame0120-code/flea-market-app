@@ -1,0 +1,55 @@
+.verify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 237px;
+}
+
+.verify__text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+}
+
+.verify__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 257px;
+    height: 69px;
+    margin-top: 62px;
+    background-color: #D9D9D9;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.verify__button:hover {
+    opacity: 0.8;
+}
+
+.verify__resend-form {
+    margin-top: 52px;
+}
+
+.verify__resend {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #0073CC;
+    cursor: pointer;
+}
+
+.verify__resend:hover {
+    text-decoration: underline;
+}

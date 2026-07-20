@@ -1,0 +1,97 @@
+/* ===========================
+   common.css
+   layouts/auth・layouts/app 共通
+   =========================== */
+
+/* --- body / main --- */
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+        "Noto Sans JP", sans-serif;
+}
+
+main {
+    background-color: #fff;
+}
+
+/* --- header --- */
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 24px;
+    background-color: #000;
+    gap: 24px;
+}
+
+/* --- ロゴ --- */
+.header__logo img {
+    height: 28px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* --- 検索フォーム（layouts/app のみ） --- */
+.header__search {
+    width: 500px;
+    flex-shrink: 1;
+    min-width: 0;
+    height: 50px;
+    margin-left: 8px;
+}
+
+.header__search input[type="text"] {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* --- ナビゲーション（layouts/app のみ） --- */
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.header-nav a,
+.header-nav button {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    white-space: nowrap;
+}
+
+/* --- 出品ボタン --- */
+.header-nav .btn-sell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000 !important;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-nav .btn-sell:hover {
+    background-color: #eee;
+}

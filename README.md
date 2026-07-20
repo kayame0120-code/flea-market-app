@@ -31,7 +31,7 @@
 
 - 商品一覧画面：http://localhost:8063/
 - 会員登録画面：http://localhost:8063/register
-- phpMyAdmin：http://localhost:8080/
+- phpMyAdmin：http://localhost:8083/
 
 ## 使用技術（実行環境）
 
@@ -83,12 +83,10 @@ erDiagram
         timestamps timestamps
     }
     item_category {
-        bigint id PK
         bigint item_id FK
         bigint category_id FK
     }
     likes {
-        bigint id PK
         bigint user_id FK
         bigint item_id FK
     }
@@ -114,4 +112,4 @@ erDiagram
 ## URL
 
 - 開発環境：http://localhost:8063/
-- phpMyAdmin：http://localhost:8080/
+- phpMyAdmin：http://localhost:8083/
