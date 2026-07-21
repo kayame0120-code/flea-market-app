@@ -62,9 +62,12 @@ erDiagram
     users {
         bigint id PK
         string name
-        string email
+        string email UK
         timestamp email_verified_at
         string password
+        text two_factor_secret
+        text two_factor_recovery_codes
+        string remember_token
         string img_url
         string postal_code
         string address
@@ -91,12 +94,12 @@ erDiagram
         timestamp updated_at
     }
     item_category {
-        bigint item_id FK
-        bigint category_id FK
+        bigint item_id FK, UK
+        bigint category_id FK, UK
     }
     likes {
-        bigint user_id FK
-        bigint item_id FK
+        bigint user_id FK, UK
+        bigint item_id FK, UK
     }
     comments {
         bigint id PK
@@ -109,7 +112,7 @@ erDiagram
     purchases {
         bigint id PK
         bigint user_id FK
-        bigint item_id FK
+        bigint item_id FK, UK
         tinyint payment_method
         string shipping_postal_code
         string shipping_address
